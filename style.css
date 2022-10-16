@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Anton");
+
 * {
   margin: 0;
   padding: 0;
@@ -46,11 +48,14 @@ header ul li {
 
 header ul li a {
   display: inline-block;
-  color: #333;
+  color: #ffffff;
   font-weight: 400;
   margin-left: 40px;
   list-style: none;
+  font-size: 20px;
+  font-family: "Alkalami", serif;
   text-decoration: none;
+  letter-spacing: 1.2px;
 }
 
 .content {
@@ -70,7 +75,8 @@ header ul li a {
   color: #333;
   font-size: 4em;
   line-height: 1.4em;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-family: "Anton", sans-serif;
 }
 
 .content .textBox h2 span {
@@ -81,6 +87,9 @@ header ul li a {
 
 .content .textBox p {
   color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Alkalami", serif;
 }
 
 .content .textBox a {
@@ -105,7 +114,7 @@ header ul li a {
 }
 
 .content .imgBox img {
-  max-width: 340px;
+  max-height: 400px;
 }
 
 .thumb {
@@ -129,6 +138,14 @@ header ul li a {
   transform: translateY(-15px);
 }
 
+/* .content .textBox a {
+  font-family: "Alkalami", serif;
+} */
+
+.content .textBox a:hover {
+  box-shadow: 10px 10px 20px black;
+}
+
 .thumb li img {
   max-width: 60px;
   min-height: 100%;
@@ -146,16 +163,30 @@ header ul li a {
 }
 
 .sci li {
-    list-style: none;
-
+  list-style: none;
 }
 
 .sci li a {
-    display: inline-block;
-    margin: 5px 0;
-    transform: scale(0.6);
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
 }
 
 .sci li a img {
-    max-width: 50px;
+  max-width: 50px;
+  transition: 0.5s ease-in-out;
+}
+
+.sci li a img:hover {
+  transform: translateY(-15px);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #017143;
+  clip-path: circle(600px at right);
 }
