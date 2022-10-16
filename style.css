@@ -243,8 +243,14 @@ header ul li a {
     padding: 10px 20px;
   }
 
+  header .logo {
+    max-width: 3.5rem;
+  }
+
   header ul li a {
     color: #017143;
+    margin-left: 1rem;
+    font-size: 16px;
   }
 
   .content {
