@@ -13,7 +13,7 @@ h1 {
 section {
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 100px 100px 0 100px;
   display: flex;
   display: flex;
   align-items: center;
@@ -137,10 +137,6 @@ header ul li a {
 .content .textBox a:hover {
   transform: translateY(-15px);
 }
-
-/* .content .textBox a {
-  font-family: "Alkalami", serif;
-} */
 
 .content .textBox a:hover {
   box-shadow: 10px 10px 20px black;
