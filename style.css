@@ -7,7 +7,7 @@
 }
 
 nav {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .navbar-brand img {
@@ -233,9 +233,10 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+
   .circle {
     clip-path: circle(13rem at center);
-    top: 28.5rem;
+    top: 30rem;
   }
 
   .content {
@@ -256,10 +257,12 @@ section {
     width: 100%;
     line-height: 2;
     padding: 5%;
+    margin-top: 5rem;
   }
 
   .content .textBox p {
-    margin-top: 19rem;
+    position: absolute;
+    top: 30rem;
     color: #ffffff;
   }
 
@@ -277,8 +280,6 @@ section {
 
   .link-container {
     width: 100%;
-    position: relative;
-    bottom: 23rem;
   }
 
   .content .imgBox {
