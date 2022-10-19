@@ -1,11 +1,14 @@
 const menuBtn = document.querySelector(".navbar-toggler");
 const circle = document.querySelector(".circle");
+const drinks = document.querySelector(".thumb");
 
 const openedMenu = () => {
   if (menuBtn.ariaExpanded === "true") {
     circle.style.top = "38.5rem";
+    drinks.style.top = "56.5rem"
   } else {
     circle.style.top = "30rem"
+    drinks.style.top ="48"
   }
 }
 
