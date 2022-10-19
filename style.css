@@ -291,8 +291,8 @@ section {
 
   .content .imgBox img {
     position: absolute;
-    max-height: 5rem;
-    top: 24rem;
+    max-height: 6.5rem;
+    top: 29rem;
     bottom: 0;
     left: unset;
   }
