@@ -237,7 +237,7 @@ header ul li a {
 @media screen and (max-width: 500px) {
   .circle {
     clip-path: circle(13rem at center);
-    top: 35%;
+    top: 23rem;
   }
 
   header {
@@ -259,24 +259,38 @@ header ul li a {
   }
 
   section {
-    padding: 100px 50px 0;
+    padding: 100px 20px 0;
     text-align: center;
   }
 
   .content .textBox h2 {
     letter-spacing: 2px;
+    margin-top: 3rem;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    line-height: 2;
+    padding: 5%;
+  }
+
+  .content .textBox p {
+    margin-top: 10rem;
   }
 
   .content .textBox h2 span {
-    color: #ffffff;
+    color: #017143;
   }
 
   .content .textBox a {
-    color: #017143;
-    background: #ffffff;
     border-radius: 40px;
     font-weight: 800;
     margin-top: 10px;
+  }
+
+  .link-container {
+    width: 100%;
+    position: relative;
+    bottom: 19rem;
   }
 
   .content .imgBox {
@@ -293,7 +307,7 @@ header ul li a {
 
   .thumb {
     left: 2.25rem;
-    bottom: 0;
+    top: 45rem;
     flex-direction: column;
   }
 
