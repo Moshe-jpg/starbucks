@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks</title>
-    <link rel="icon" href="assets/green-starbs.png">
+    <link rel="icon" href="assets/green-starbs.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -36,10 +36,10 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#second">Current</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#third">Testimonials</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -170,6 +170,77 @@
           </li>
         </ul>
       </section>
+      <section id="second">
+        <div id="current">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_1777c" class="widget-sizing"></div>
+            <div class="tradingview-widget-copyright">
+              <a
+                href="https://www.tradingview.com/symbols/NASDAQ-SBUX/"
+                rel="noopener"
+                target="_blank"
+                ><span class="blue-text">SBUX Chart</span></a
+              >
+              by TradingView
+            </div>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+      </section>
+      <section id="third">
+        <div class="testimonials">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+            data-bs-touch="true"
+            data-bs-pause="hover"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/quote-bg.png" class="d-block w-100 " alt="testimonial" />
+                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque velit dolor eos reiciendis quis debitis officiis quidem, quo pariatur distinctio assumenda ab magni tenetur.</p>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/quote-bg.png" class="d-block w-100 " alt="testimonial" />
+                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque velit dolor eos reiciendis quis debitis officiis quidem, quo pariatur distinctio assumenda ab magni tenetur.</p>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/quote-bg.png" class="d-block w-100 " alt="testimonial" />
+                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, atque velit dolor eos reiciendis quis debitis officiis quidem, quo pariatur distinctio assumenda ab magni tenetur.</p>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              id="prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              >⬅</span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              id="next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              >➡</span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="index.js"></script>
     <script
@@ -182,5 +253,24 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/tv.js"
+    ></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        autosize: true,
+        symbol: "NASDAQ:SBUX",
+        interval: "D",
+        timezone: "Etc/UTC",
+        theme: "light",
+        style: "1",
+        locale: "en",
+        toolbar_bg: "#f1f3f6",
+        enable_publishing: false,
+        allow_symbol_change: true,
+        container_id: "tradingview_1777c",
+      });
+    </script>
   </body>
 </html>
