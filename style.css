@@ -235,9 +235,10 @@ header ul li a {
 }
 
 @media screen and (max-width: 500px) {
-    .circle {
-        clip-path: circle(13rem at center);
-    }
+  .circle {
+    clip-path: circle(13rem at center);
+    top: 11rem;
+  }
 
   header {
     padding: 10px 20px;
