@@ -291,14 +291,14 @@ section {
 
   .content .imgBox img {
     position: absolute;
-    max-height: 10rem;
+    max-height: 510rem;
     top: 24rem;
     bottom: 0;
     left: unset;
   }
 
   .thumb {
-    left: 11.25rem;
+    left: 45%;
     top: 54.5rem;
     flex-direction: row;
   }
@@ -312,7 +312,7 @@ section {
   }
 
   .thumb li img {
-    max-width: 3rem;
+    max-width: 1.75rem;
   }
 
   .sci {
