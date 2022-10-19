@@ -6,59 +6,26 @@
   box-sizing: border-box;
 }
 
-h1 {
-  background-color: red;
+nav {
+    background: #ffffff;
+}
+
+.navbar-brand img {
+  max-width: 3.5rem;
 }
 
 section {
   width: 100%;
-  min-height: 100vh;
-  padding: 100px 100px 0 100px;
+  padding: 35px 70px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header .logo {
-  position: relative;
-  max-width: 80px;
-}
-
-header ul {
-  position: relative;
-  display: flex;
-}
-
-header ul li {
-  list-style: none;
-}
-
-header ul li a {
-  display: inline-block;
-  color: #ffffff;
-  font-weight: 400;
-  margin-left: 40px;
-  list-style: none;
-  font-size: 20px;
-  font-family: "Alkalami", serif;
-  text-decoration: none;
-  letter-spacing: 1.2px;
-}
-
 .content {
   position: relative;
+  padding: 0 60px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -91,12 +58,13 @@ header ul li a {
   font-family: "Alkalami", serif;
 }
 
-.content .textBox a {
+.link-container button {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
   background: #017143;
   color: #ffffff;
+  border: none;
   border-radius: 40px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -105,7 +73,7 @@ header ul li a {
 }
 
 .content .imgBox {
-  width: 600px;
+  width: 75%;
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
@@ -119,7 +87,7 @@ header ul li a {
 .thumb {
   position: absolute;
   left: 50%;
-  bottom: 20px;
+  bottom: 0;
   transform: translateX(-50%);
   display: flex;
 }
@@ -133,12 +101,22 @@ header ul li a {
 }
 
 .thumb li:hover,
-.content .textBox a:hover {
+.link-container button:hover {
   transform: translateY(-15px);
 }
 
-.content .textBox a:hover {
+.link-container button:hover {
+  background: #ffffff;
+  color: #017143;
   box-shadow: 10px 10px 20px black;
+}
+
+.modal-header .btn-close {
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  display: flex;
 }
 
 .thumb li img {
@@ -186,9 +164,19 @@ header ul li a {
   clip-path: circle(600px at right);
 }
 
+#navbarText {
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .circle {
-    clip-path: circle(490px at right);
+    clip-path: circle(450px at right);
   }
 
   .content .textBox h2 {
@@ -201,6 +189,12 @@ header ul li a {
 
   .content .imgBox img {
     max-height: 300px;
+    position: relative;
+    left: 40px;
+  }
+
+  .thumb {
+    bottom: 0;
   }
 
   .thumb li {
@@ -212,7 +206,11 @@ header ul li a {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 810px) {
+  section {
+    padding: 35px;
+  }
+
   .content .textBox h2 {
     font-size: 2rem;
     color: #000000;
@@ -237,36 +235,23 @@ header ul li a {
 @media screen and (max-width: 500px) {
   .circle {
     clip-path: circle(13rem at center);
-    top: 23rem;
-  }
-
-  header {
-    padding: 10px 20px;
-  }
-
-  header .logo {
-    max-width: 3.5rem;
-  }
-
-  header ul li a {
-    color: #017143;
-    margin-left: 1rem;
-    font-size: 16px;
+    top: 28.5rem;
   }
 
   .content {
     flex-direction: column;
+    padding: 0 10px;
   }
 
   section {
-    padding: 100px 20px 0;
+    padding: 25px 20px 0;
     text-align: center;
   }
 
   .content .textBox h2 {
     letter-spacing: 3.25px;
     color: #000000;
-    background: #F5EFE6;
+    background: #f5efe6;
     border-radius: 25px;
     width: 100%;
     line-height: 2;
@@ -274,7 +259,8 @@ header ul li a {
   }
 
   .content .textBox p {
-    margin-top: 10rem;
+    margin-top: 19rem;
+    color: #ffffff;
   }
 
   .content .textBox h2 span {
@@ -292,7 +278,7 @@ header ul li a {
   .link-container {
     width: 100%;
     position: relative;
-    bottom: 19.5rem;
+    bottom: 23rem;
   }
 
   .content .imgBox {
@@ -304,12 +290,13 @@ header ul li a {
 
   .content .imgBox img {
     max-height: 10rem;
-    bottom: unset;
+    top: 10rem;
+    left: unset;
   }
 
   .thumb {
     left: 2.25rem;
-    top: 45rem;
+    top: 60rem;
     flex-direction: column;
   }
 

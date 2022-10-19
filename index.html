@@ -6,81 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <section>
-      <canvas class="circle"></canvas>
-      <header>
-        <a href="index.html">
-          <img class="logo" src="assets/logo.png" alt="starbucks logo" />
-        </a>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </header>
-      <div class="content">
-        <div class="textBox">
-          <h2>It's Not Just Coffee<br />It's <span>Starbucks</span></h2>
-          <p>
-            In everything we do, we are always dedicated to Our Mission: to
-            inspire and nurture the human spirit. One person, one cup, and one
-            neighborhood at a time.
-          </p>
-          <div class="link-container">
-            <a href="#learn-more">Learn More</a>
+    <canvas class="circle"></canvas>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/logo.png" alt="navbar logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="imgBox">
-          <img
-            class="starbucks"
-            src="assets/green-starbs.png"
-            alt="starbucks green"
-          />
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <div class="textBox">
+            <h2>It's Not Just Coffee<br />It's <span>Starbucks</span></h2>
+            <p>
+              In everything we do, we are always dedicated to Our Mission: to
+              inspire and nurture the human spirit. One person, one cup, and one
+              neighborhood at a time.
+            </p>
+            <div class="link-container">
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Learn more
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Starbucks History
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >✖</button>
+                    </div>
+                    <div class="modal-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi laborum recusandae dolorem qui ipsa repellendus nesciunt accusamus totam, voluptate ipsum consectetur eaque. Quasi, omnis numquam ipsam odit laudantium eligendi dolorum perferendis deleniti nesciunt modi cupiditate sapiente temporibus placeat laborum dignissimos ea dolorem, fugiat praesentium ullam porro consectetur. Qui officia reprehenderit quasi odit quod! Explicabo, reiciendis?</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imgBox">
+            <img
+              class="starbucks"
+              src="assets/green-starbs.png"
+              alt="starbucks green"
+            />
+          </div>
         </div>
-      </div>
-      <ul class="thumb">
-        <li>
-          <img
-            src="assets/green-starbs.png"
-            alt="green drink"
-            onclick="imgSlider('assets/green-starbs.png'); changeCircleColour('#017143')"
-          />
-        </li>
-        <li>
-          <img
-            src="assets/brown-starbs.png"
-            alt="brown drink"
-            onclick="imgSlider('assets/brown-starbs.png'); changeCircleColour('#713301')"
-          />
-        </li>
-        <li>
-          <img
-            src="assets/pink-starbs.png"
-            alt="pink drink"
-            onclick="imgSlider('assets/pink-starbs.png');  changeCircleColour('#d752b1')"
-          />
-        </li>
-      </ul>
-      <ul class="sci">
-        <li>
-          <a href="https://www.instagram.com/starbucks"
-            ><img src="assets/instagram.png" alt="facebook logo"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com/starbucks"
-            ><img src="assets/twitter.png" alt="twitter logo"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/starbucks"
-            ><img src="assets/meta.png" alt="meta logo"
-          /></a>
-        </li>
-      </ul>
-    </section>
+        <ul class="thumb">
+          <li>
+            <img
+              src="assets/green-starbs.png"
+              alt="green drink"
+              onclick="imgSlider('assets/green-starbs.png'); changeCircleColour('#017143')"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/brown-starbs.png"
+              alt="brown drink"
+              onclick="imgSlider('assets/brown-starbs.png'); changeCircleColour('#713301')"
+            />
+          </li>
+          <li>
+            <img
+              src="assets/pink-starbs.png"
+              alt="pink drink"
+              onclick="imgSlider('assets/pink-starbs.png');  changeCircleColour('#d752b1')"
+            />
+          </li>
+        </ul>
+        <ul class="sci">
+          <li>
+            <a href="https://www.instagram.com/starbucks"
+              ><img src="assets/instagram.png" alt="facebook logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/starbucks"
+              ><img src="assets/twitter.png" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/starbucks"
+              ><img src="assets/meta.png" alt="meta logo"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
