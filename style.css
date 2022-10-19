@@ -264,10 +264,10 @@ header ul li a {
   }
 
   .content .textBox h2 {
-    letter-spacing: 2px;
-    margin-top: 3rem;
-    background-color: #000000;
-    color: #ffffff;
+    letter-spacing: 3.25px;
+    color: #000000;
+    background: #F5EFE6;
+    border-radius: 25px;
     width: 100%;
     line-height: 2;
     padding: 5%;
@@ -285,12 +285,14 @@ header ul li a {
     border-radius: 40px;
     font-weight: 800;
     margin-top: 10px;
+    background: #017143;
+    color: #ffffff;
   }
 
   .link-container {
     width: 100%;
     position: relative;
-    bottom: 19rem;
+    bottom: 19.5rem;
   }
 
   .content .imgBox {
