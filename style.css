@@ -206,15 +206,7 @@ section {
   position: relative;
   top: 15rem;
   min-height: 100vh;
-  background: repeating-linear-gradient(
-    45deg,
-    #017143,
-    transparent,
-    #017143,
-    transparent,
-    #017143,
-    transparent 3px
-  );
+  background: linear-gradient(-30deg, #017143, transparent);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,17 +223,19 @@ section {
   height: 50%;
   max-height: 500px;
   background: repeating-linear-gradient(
-    53deg,
-    #686601,
+    140deg,
+    #000000,
     transparent,
-    #686601,
+    #000000,
     transparent,
-    #686601,
-    transparent 3px
+    #000000,
+    transparent 5px
   );
 }
 
 .testimonials p {
+  color: #ffffff;
+  font-size: large;
   position: absolute;
   bottom: 10rem;
   left: 0;
@@ -414,12 +408,12 @@ section {
   }
 
   #second {
-    top: 40rem;
-    padding: 0 10%;
+    top: 35rem;
+    padding: 0;
   }
 
   #third {
-    top: 40rem;
+    top: 35rem;
     padding: 0;
   }
 
@@ -436,7 +430,8 @@ section {
     padding: 0 10px;
   }
 
-  #next, #prev {
+  #next,
+  #prev {
     display: none;
   }
 }
