@@ -236,7 +236,7 @@ section {
 
   .circle {
     clip-path: circle(13rem at center);
-    top: 30rem;
+    top: 34rem;
   }
 
   .content {
@@ -261,7 +261,7 @@ section {
 
   .content .textBox p {
     position: absolute;
-    top: 33rem;
+    top: 38rem;
     color: #ffffff;
     letter-spacing: 1.5px;
   }
@@ -290,15 +290,16 @@ section {
   }
 
   .content .imgBox img {
+    position: absolute;
     max-height: 10rem;
-    top: 0;
+    top: 24rem;
     bottom: 0;
     left: unset;
   }
 
   .thumb {
     left: 11.25rem;
-    top: 48rem;
+    top: 54.5rem;
     flex-direction: row;
   }
 
@@ -311,7 +312,7 @@ section {
   }
 
   .thumb li img {
-    max-width: 5rem;
+    max-width: 3rem;
   }
 
   .sci {
