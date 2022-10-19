@@ -72,6 +72,10 @@ section {
   transition: 0.5s ease-in-out;
 }
 
+.modal-body {
+  text-align: justify;
+}
+
 .content .imgBox {
   width: 75%;
   display: flex;
@@ -233,7 +237,6 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-
   .circle {
     clip-path: circle(13rem at center);
     top: 34rem;
@@ -291,8 +294,8 @@ section {
 
   .content .imgBox img {
     position: absolute;
-    max-height: 6.5rem;
-    top: 29rem;
+    max-height: 8.5rem;
+    top: 33rem;
     bottom: 0;
     left: unset;
   }
