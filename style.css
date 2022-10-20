@@ -21,6 +21,7 @@ section {
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .content {
@@ -69,7 +70,6 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   text-decoration: none;
-  transition: 0.5s ease-in-out;
 }
 
 .modal-body {
