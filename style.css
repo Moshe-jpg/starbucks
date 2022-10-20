@@ -206,38 +206,29 @@ section {
   position: relative;
   top: 15rem;
   min-height: 100vh;
-  background: linear-gradient(-30deg, #017143, transparent);
+  background: linear-gradient(to left, #017143 50%, #ffffff 50%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .testimonials {
-  width: 80%;
+  width: 90%;
   max-width: 650px;
-  background: #ffffff;
   border-radius: 25px;
+  background: linear-gradient(130deg, #017143, #ffffff);
 }
 
 .testimonials img {
   height: 50%;
   max-height: 500px;
-  background: repeating-linear-gradient(
-    140deg,
-    #000000,
-    transparent,
-    #000000,
-    transparent,
-    #000000,
-    transparent 5px
-  );
 }
 
 .testimonials p {
-  color: #ffffff;
+  color: darkslategray;
   font-size: large;
   position: absolute;
-  bottom: 10rem;
+  bottom: 3rem;
   left: 0;
   text-align: center;
   right: 0;
@@ -247,14 +238,27 @@ section {
   letter-spacing: 1px;
 }
 
+.testimonials p strong {
+    color: #017143;
+}
+
+.testimonial img {
+  max-width: 80px;
+  border-radius: 25px;
+}
+
+.testimonial span {
+  font-weight: lighter;
+}
+
 #prev {
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
 }
 
 #next {
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 @media screen and (max-width: 992px) {
@@ -293,6 +297,10 @@ section {
   .thumb li img {
     max-width: 45px;
   }
+
+  .testimonials p {
+    bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 810px) {
@@ -318,6 +326,24 @@ section {
     max-height: 15rem;
     position: relative;
     bottom: 3rem;
+  }
+
+  #third {
+    padding: 15px;
+  }
+
+  .testimonials {
+    width: 100%;
+  }
+
+  .testimonials p {
+    font-size: 16px;
+    bottom: 2.8rem;
+    padding: 0 3rem;
+  }
+
+  .testimonial img {
+    max-width: 60px;
   }
 }
 
@@ -418,20 +444,26 @@ section {
   }
 
   .testimonials {
-    width: 100%;
+    width: 90%;
+    min-height: 85vh;
   }
 
   .testimonials img {
-    height: 70vh;
+    height: 75vh;
   }
 
   .testimonials p {
-    bottom: 6rem;
+    bottom: -3px;
     padding: 0 10px;
   }
 
   #next,
   #prev {
     display: none;
+  }
+
+  .testimonial img {
+    max-width: 60px;
+    max-height: 60px;
   }
 }
