@@ -22,7 +22,7 @@ section {
   align-items: center;
   justify-content: space-between;
   background: #ffffff;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .content {
