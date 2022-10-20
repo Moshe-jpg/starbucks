@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -57,6 +58,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   font-family: "Alkalami", serif;
+  transition: 0.5s ease-in-out;
 }
 
 .link-container button {
@@ -114,15 +116,8 @@ section {
   transition: 0.5s ease-in-out;
 }
 
-.thumb li:hover,
-.link-container button:hover {
+.thumb li:hover {
   transform: translateY(-15px);
-}
-
-.link-container button:hover {
-  background: #ffffff;
-  color: #017143;
-  box-shadow: 10px 10px 20px black;
 }
 
 .modal-header .btn-close {
@@ -186,7 +181,7 @@ section {
 
 #second {
   position: relative;
-  top: 12rem;
+  top: 4rem;
   padding: 0 25px;
   min-height: 100vh;
 }
@@ -204,7 +199,7 @@ section {
 
 #third {
   position: relative;
-  top: 15rem;
+  top: 6rem;
   min-height: 100vh;
   background: linear-gradient(to left, #017143 50%, #ffffff 50%);
   display: flex;
@@ -239,7 +234,7 @@ section {
 }
 
 .testimonials p strong {
-    color: #017143;
+  color: #017143;
 }
 
 .testimonial img {
@@ -259,6 +254,138 @@ section {
 #next {
   justify-content: flex-end;
   align-items: center;
+}
+
+/* contact section */
+
+#fourth {
+  position: relative;
+  top: 6rem;
+  padding: 0 25px;
+  min-height: 100vh;
+}
+
+/*  */
+
+.map-container,
+.contact-form {
+  height: 75vh;
+  width: 45vw;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 85%;
+}
+
+.contact-header {
+  position: relative;
+  bottom: 10%;
+  font-size: 25px;
+  transition: 0.5s ease-in-out;
+  margin-top: 5%;
+}
+
+/* contact form styling */
+input {
+  text-align: center;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: #017143;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  font-size: 1em;
+  transition: 0.5s ease-in-out;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.inputBox input:focus ~ span {
+  color: #017143;
+  transform: translateX(30px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #ffffff;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  letter-spacing: 0.2em;
+}
+
+.inputBox input:focus {
+  border: 1px solid #000000;
+}
+
+.inputBoxMessage {
+  height: 6rem;
+}
+
+.inputBoxMessageInput {
+  height: 6rem;
+  text-align: left;
+}
+
+/* The input buttons */
+
+.inputBoxBtnContainer {
+  text-align: center;
+}
+
+.inputBoxBtn {
+  text-align: center;
+  background-color: #1247b8;
+  border: 0;
+  width: 8rem;
+  height: 2.25rem;
+  padding: 1%;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  letter-spacing: 1.25px;
+  transition: 0.5s ease-in-out;
+}
+
+/* box shadows */
+
+#current,
+.testimonials,
+.map-container,
+.contact-form {
+  box-shadow: 10px 10px 20px black;
 }
 
 @media screen and (max-width: 992px) {
@@ -466,4 +593,26 @@ section {
     max-width: 60px;
     max-height: 60px;
   }
+
+  #fourth {
+    flex-direction: column;
+    top: 35rem;
+  }
+
+  .map-container,
+  .contact-form {
+    height: 75vh;
+    width: 90vw;
+    margin: 30px 0;
+  }
+
+  .inputBoxBtn {
+    height: auto;
+    width: 30vw;
+  }
+
+  .contact-header {
+    margin-bottom: 0;
+  }
+
 }

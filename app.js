@@ -25,5 +25,7 @@ timeline
   .fromTo(
     ".open-btn",
     { opacity: 0, scale: 0, rotation: 720 },
-    { opacity: 1, scale: 1, rotation: 0 }, "<.1"
+    { opacity: 1, scale: 1, rotation: 0 },
+    "<.1"
   );
+
