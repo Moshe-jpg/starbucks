@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Anton");
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Anton&family=Lobster&family=Comfortaa");
 
 * {
   margin: 0;
@@ -17,6 +17,15 @@ nav {
 
 .navbar-brand img {
   max-width: 3.5rem;
+}
+
+.contact-link {
+  background: #017143;
+  border-radius: 25px;
+}
+
+#white {
+  color: #ffffff;
 }
 
 section {
@@ -42,15 +51,21 @@ section {
   max-width: 600px;
 }
 
-.content .textBox h2 {
+#first {
+  padding-top: 40px;
+}
+
+.content .textBox h1 {
   color: #333;
-  font-size: 4em;
-  line-height: 1.4em;
-  /* font-weight: 500; */
+  font-size: 3.25em;
+  line-height: 1.2em;
+}
+
+.content .textBox h1 span {
   font-family: "Anton", sans-serif;
 }
 
-.content .textBox h2 span {
+.content .textBox h1 span {
   color: #017143;
   font-size: 1.2em;
   font-weight: 900;
@@ -81,7 +96,7 @@ section {
   font-size: 18px;
   font-weight: 400;
   text-align: justify;
-  background: url("assets/starbs-bg.jpg");
+  background: url("local-assets/starbs-bg.jpg");
   background-size: cover;
   background-position: 50%;
   display: grid;
@@ -192,9 +207,74 @@ section {
   width: 100%;
 }
 
-.widget-sizing {
-  height: 30rem;
+.current-header {
+  text-align: center;
+  margin: 2vh;
+}
+
+#card1 {
+  background: url("local-assets/coffee-bg-1.jpg");
+}
+#card2 {
+  background: url("local-assets/coffee-bg-2.jpg");
+}
+
+#card3 {
+  background: url("local-assets/coffee-bg-3.jpg");
+}
+
+#card4 {
+  background: url("local-assets/coffee-bg-4.jpg");
+}
+
+#card5 {
+  background: url("local-assets/coffee-bg-5.jpg");
+}
+
+#card6 {
+  background: url("local-assets/coffee-bg-6.jpg");
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6 {
+  background-size: cover;
+  background-position: 50%;
+  display: grid;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 23%);
+  color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 280px;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.current-offer-header {
   width: 100%;
+  color: #ffffff;
+  background: #017143;
+  text-align: center;
+  max-width: 10rem;
+  border-radius: 25px;
+}
+
+.card-title {
+  text-align: center;
+  padding: 5%;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.card-text {
+  padding: 5%;
+  text-align: center;
+  align-self: flex-end;
 }
 
 /* testimonials section */
@@ -230,7 +310,8 @@ section {
   text-align: center;
   right: 0;
   padding: 0 7rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -298,6 +379,7 @@ form {
   position: relative;
   bottom: 10%;
   font-size: 25px;
+  font-family: "Lobster", cursive;
   transition: 0.5s ease-in-out;
   margin-top: 5%;
 }
@@ -383,7 +465,6 @@ input {
 
 /* box shadows */
 
-#current,
 .testimonials,
 .map-container,
 .contact-form {
@@ -394,6 +475,23 @@ input {
   .navbar-nav {
     align-items: center;
   }
+
+  .thumb li img {
+    max-width: 45px;
+  }
+
+  .content .imgBox {
+    padding: 0;
+  }
+
+  #white {
+    color: var(--bs-nav-link-color);
+  }
+
+  .contact-link {
+    background: transparent;
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -401,7 +499,7 @@ input {
     clip-path: circle(450px at right);
   }
 
-  .content .textBox h2 {
+  .content .textBox h1 {
     font-size: 2.5rem;
   }
 
@@ -416,7 +514,7 @@ input {
   }
 
   .thumb {
-    bottom: 0;
+    bottom: 5rem;
   }
 
   .thumb li {
@@ -437,7 +535,7 @@ input {
     padding: 35px;
   }
 
-  .content .textBox h2 {
+  .content .textBox h1 {
     font-size: 2rem;
     color: #000000;
   }
@@ -447,7 +545,7 @@ input {
     color: #000000;
   }
 
-  .content .textBox h2 span {
+  .content .textBox h1 span {
     color: #000000;
   }
 
@@ -492,14 +590,13 @@ input {
     text-align: center;
   }
 
-  .content .textBox h2 {
+  .content .textBox h1 {
     letter-spacing: 3.25px;
     color: #000000;
-    background: #f5efe6;
     border-radius: 25px;
     width: 100%;
     line-height: 2;
-    padding: 5%;
+    padding: 0 5%;
   }
 
   .content .textBox p {
@@ -509,7 +606,7 @@ input {
     letter-spacing: 1.5px;
   }
 
-  .content .textBox h2 span {
+  .content .textBox h1 span {
     color: #017143;
   }
 
@@ -533,9 +630,8 @@ input {
   }
 
   .content .imgBox img {
-    position: absolute;
     max-height: 8.5rem;
-    top: 26rem;
+    top: 6rem;
     bottom: 0;
     left: unset;
   }
@@ -597,15 +693,22 @@ input {
   }
 
   #fourth {
-    flex-direction: column;
+    flex-direction: column-reverse;
     top: 35rem;
   }
 
   .map-container,
   .contact-form {
-    height: 75vh;
     width: 90vw;
     margin: 30px 0;
+  }
+
+  .map-container {
+    height: 35vh;
+  }
+
+  .contact-form {
+    height: 75vh;
   }
 
   .inputBoxBtn {
@@ -616,5 +719,4 @@ input {
   .contact-header {
     margin-bottom: 0;
   }
-
 }
