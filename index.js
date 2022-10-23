@@ -6,10 +6,10 @@ const form = document.querySelector("form");
 
 const openedMenu = () => {
   if (menuBtn.ariaExpanded === "true") {
-    circle.style.top = "29.5rem";
+    circle.style.top = "36.5rem";
     drinks.style.top = "62.5rem";
   } else {
-    circle.style.top = "22rem";
+    circle.style.top = "29.5rem";
     drinks.style.top = "54.5rem";
   }
 };
