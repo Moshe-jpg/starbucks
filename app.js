@@ -3,6 +3,7 @@ const timeline = gsap.timeline({ defaults: { duration: 1 } });
 timeline
   .from("header", { y: "-100", ease: "bounce", duration: 2 })
   .from(".nav-link", { opacity: 0, stagger: 0.5 })
+  .from(".thumb", { y: "200vh", ease: "elastic", duration: 2.5 }, 1)
   .from(
     ".textBox h1",
     {
@@ -29,4 +30,3 @@ timeline
     { opacity: 1, scale: 1, rotation: 0 },
     "<.1"
   );
-
