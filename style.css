@@ -581,7 +581,7 @@ input {
 @media screen and (max-width: 500px) {
   .circle {
     clip-path: circle(13rem at center);
-    top: 34rem;
+    top: 22rem;
   }
 
   .content {
