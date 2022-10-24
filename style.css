@@ -247,11 +247,11 @@ section {
 #card4,
 #card5,
 #card6 {
+  box-shadow: 5px 5px 10px black;
   border: 0;
   background-size: cover;
   background-position: 50%;
   display: grid;
-  border-radius: 6px;
   box-shadow: 0 1px 4px rgb(0 0 0 / 23%);
   color: #ffffff;
   margin-bottom: 20px;
@@ -305,7 +305,6 @@ section {
 .testimonials {
   width: 90%;
   max-width: 650px;
-  border-radius: 25px;
   background: linear-gradient(130deg, #017143, #ffffff);
 }
 
@@ -372,7 +371,6 @@ section {
 .contact-form {
   height: 75vh;
   width: 45vw;
-  border-radius: 10px;
 }
 
 iframe {
@@ -636,12 +634,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-
   #first {
     padding-top: 5px;
   }
-
-  
 
   .circle {
     clip-path: circle(13rem at center);

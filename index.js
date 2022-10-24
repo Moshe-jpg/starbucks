@@ -3,6 +3,7 @@ const circle = document.querySelector(".circle");
 const drinks = document.querySelector(".thumb");
 const drinkMessage = document.querySelector(".content .textBox p");
 const form = document.querySelector("form");
+const headerStarbs = document.querySelector("h1 span");
 
 const openedMenu = () => {
   if (menuBtn.ariaExpanded === "true") {
@@ -22,6 +23,11 @@ const imgSlider = (image) => {
   const starbs = document.querySelector(".starbucks");
   starbs.src = image;
 };
+
+const changeStarbsHeader = (colour) => {
+  headerStarbs.style.transition = "0.5s ease-in-out";
+  headerStarbs.style.color = colour;
+}
 
 const changeCircleColour = (colour) => {
   circle.style.transition = "0.5s ease-in-out";
